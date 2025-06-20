@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker & Currency Converter</title>
+    <link rel="stylesheet" href="styles/expense.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+       <!-- Hamburger Menu Button -->
+       <div class="menu-btn" >
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="sidebar">
+        <h2>📊 Dashboard</h2>
+        <ul>
+            <li><a href="home.html">🏠 Home</a></li>
+            <li><a href="expense.html">💰 Expense Tracker</a></li>
+            <li><a href="budget.html">📉 Budget Planner</a></li>
+            <li><a href="currency.html">💱  Currency Converter</a></li>
+            <li><a href="month.html">💸   Monthly Spendings </a></li>
+
+            <li><a href="#" id="logout">🚪 Logout</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Expense Tracker & Currency Converter 💰📊</h1>
+        <p>Effortlessly track and manage your daily expenses! 📅</p>
+
+        <div class="features">
+            <p>✅ Log your daily expenses quickly and efficiently. 📝</p>
+            <p>✅ Categorize expenses (Food 🍕, Transport 🚗, Shopping 🛍️).</p>
+            <p>✅ Attach receipts 🧾 or notes for future reference.</p>
+            <p>✅ Convert currencies 🌍💱 for hassle-free transactions.</p>
+        </div>
+
+        <hr>
+
+        <h2>Add Expense 📝</h2>
+        <form id="expense-form">
+            <input type="text" id="expense-name" placeholder="Expense Name" required>
+            <input type="number" id="expense-amount" placeholder="Amount ($)" required>
+            <select id="expense-category">
+                <option value="Food">🍕 Food</option>
+                <option value="Transport">🚗 Transport</option>
+                <option value="Shopping">🛍️ Shopping</option>
+                <option value="Other">💡 Other</option>
+            </select>
+            <input type="file" id="expense-receipt">
+            <textarea id="expense-note" placeholder="Add a note (optional)"></textarea>
+            <button type="submit">Add Expense ✅</button>
+        </form>
+
+        <hr>
+
+        <h2>Expense Analysis 📊</h2>
+        <canvas id="expenseChart"></canvas> <!-- First Graph -->
+        <ul id="expense-list"></ul>
+
+        
+        <h2>Spending Summary 🏦</h2>
+        <p><strong>Weekly Total:</strong> $<span id="weekly-total">__</span></p>
+        <p><strong>Monthly Total:</strong> $<span id="monthly-total">__</span></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="scripts/expense.js" defer></script>
+</body>
+
+</html>

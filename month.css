@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #f7b267,#f79d65,#f4845f,#f27059,#f25c54,#f27059, #f7b267,#f79d65);
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px gray;
+    transition: margin-left 0.3s ease-in-out; 
+
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+canvas {
+    width: 45%;
+    max-width: 300px;
+}
+/* 📌 Analysis Container */
+#analysisResults {
+    width: 100%;
+    max-width: 850px;
+    max-height: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background: linear-gradient(135deg, #fcaef1, #f7d793);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #131212;
+    font-weight: bold;
+}
+
+/* 📌 Heading */
+#analysisResults h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #131010;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 📌 Individual Analysis Results */
+#analysisResults p {
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 📌 Highest Spending (Red) */
+#highestSpent {
+    color: #fa4141;
+}
+
+/* 📌 Highest Savings (Green) */
+#highestSaved {
+    color: #11bb11ef;
+}
+
+/* 📌 Emoji Styling */
+#analysisResults p span.emoji {
+    font-size: 22px;
+    margin-left: 5px;
+}
+/* Hamburger Menu Button */
+.menu-btn {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    font-size: 24px;
+    background: #fff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 230px;
+    height: 100%;
+    background: #222;
+    color: white;
+    transition: 0.3s;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: start;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li:hover {
+    background: #333;
+}
+
+/* Active Sidebar */
+.sidebar.open {
+    left: 0;
+}

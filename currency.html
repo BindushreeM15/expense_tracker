@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles/currency.css">
+</head>
+<body>
+           <!-- Hamburger Menu Button -->
+           <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="sidebar">
+            <h2>📊 Dashboard</h2>
+            <ul>
+                <li><a href="home.html">🏠 Home</a></li>
+                <li><a href="expense.html">💰 Expense Tracker</a></li>
+                <li><a href="budget.html">📉 Budget Planner</a></li>
+                <li><a href="currency.html">💱  Currency Converter</a></li>
+                <li><a href="month.html">💸   Monthly Spendings </a></li>
+
+                <li><a href="#" id="logout">🚪 Logout</a></li>
+            </ul>
+        </div>
+    <div class="converter">
+        <h2>Currency Converter</h2>
+        <div class="input-section">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <select id="fromCurrency"></select>
+            <button id="swap">⇄</button>
+            <select id="toCurrency"></select>
+        </div>
+        <p id="convertedAmount">Converted Amount: --</p>
+        <button id="saveConversion">Save Conversion</button>
+    </div>
+    <div class="history-converter">
+
+    <h2>Conversion History</h2>
+    <ul id="conversionHistory"></ul>
+</div>
+    <script src="scripts/currency.js"></script>
+</body>
+</html>

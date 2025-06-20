@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner | Expense Tracker</title>
+    <link rel="stylesheet" href="styles/budget.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+     <!-- Hamburger Menu Button -->
+     <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    
+    <div class="sidebar">
+        <h2>📊 Dashboard</h2>
+        <ul>
+            <li><a href="home.html">🏠 Home</a></li>
+            <li><a href="expense.html">💰 Expense Tracker</a></li>
+            <li><a href="budget.html">📉 Budget Planner</a></li>
+            <li><a href="currency.html">💱 Currency Converter</a></li>
+            <li><a href="month.html">💸   Monthly Spendings </a></li>
+
+            <li><a href="#" id="logout">🚪 Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="expense-container">
+        <h1>Expense Tracker & Budget Manager 💰📊</h1>
+        <p>Manage your expenses efficiently and track your savings! 📅</p>
+
+        <div class="features">
+            <p>✅ Set <strong>monthly limits</strong> for each category. 🎯</p>
+            <p>✅ Get <strong>alerts</strong> when you exceed your budget. ⚠️</p>
+            <p>✅ View <strong>spending trends</strong> with charts. 📈</p>
+            <p>✅ Smart savings suggestions based on past spending. 💡</p>
+        </div>
+
+        <hr>
+
+        <h2>Set Monthly Budget Limits 🏦</h2>
+        <form id="budget-form">
+            <label>Food 🍕: <input type="number" id="budget-food" placeholder="Enter limit ($)"></label>
+            <label>Transport 🚗: <input type="number" id="budget-transport" placeholder="Enter limit ($)"></label>
+            <label>Shopping 🛍️: <input type="number" id="budget-shopping" placeholder="Enter limit ($)"></label>
+            <button type="submit">Set Budget ✅</button>
+        </form>
+
+        <hr>
+        <h2>Budget Alerts ⚠️</h2>
+        <p id="budget-alert" style="color: red; font-weight: bold;"></p>
+
+        <h2>Expenses Overview 📊</h2>
+        <div class="charts-container">
+            <div class="chart-box">
+                <h3>Category Breakdown</h3>
+                <canvas id="budgetChart"></canvas>
+            </div>
+        
+            <div class="chart-box">
+                <h3>Expense Forecasting</h3>
+                <canvas id="forecastChart"></canvas>
+            </div>
+        </div>
+        
+        <h2>Smart Savings Suggestions 💡</h2>
+        <p id="smart-savings"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="scripts/budget.js"></script>
+</body>
+</html>

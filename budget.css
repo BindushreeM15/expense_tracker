@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f7b267,#f79d65,#f4845f,#f27059,#f25c54,#f27059, #f7b267,#f79d65);
+}
+/* Hamburger Menu Button */
+.menu-btn {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    font-size: 24px;
+    background: #fff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background: #222;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s ease-in-out;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: start;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+.sidebar ul li:hover {
+    background: #333;
+}
+/* Open Sidebar */
+.sidebar.open {
+    left: 0;
+}
+.expense-container {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+form input, select {
+    display: block;
+    margin: 10px 0;
+    padding: 6px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color:#ebe8e8 ;
+}
+
+button {
+    background: #f1c40f;
+    padding: 10px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 📌 Expense Overview Section */
+.expense-overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* 📌 Charts Container */
+.charts-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* 📌 Donut Chart & Line Graph */
+.chart-box {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Reduce Canvas Size */
+canvas {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* 📌 Smart Savings Suggestions & Heatmap */
+#smart-savings, #heatmap {
+    text-align: center;
+    padding: 15px;
+    background: rgb(233, 228, 228);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+h2{
+    text-align: center;
+}

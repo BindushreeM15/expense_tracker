@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f7b267,#f79d65,#f4845f,#f27059,#f25c54,#f27059, #f7b267,#f79d65);
+}
+
+/* Hamburger Menu Button */
+.menu-btn {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    font-size: 24px;
+    background: #fff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #222;
+    color: white;
+    transition: 0.3s;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: start;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li:hover {
+    background: #333;
+}
+
+/* Active Sidebar */
+.sidebar.active {
+    left: 0;
+}
+
+/* Main Content */
+.content {
+    margin-left: 60px;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 750px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.info-section img {
+    width: 150px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+p{
+    font-size: 16px;
+    font-weight: bold;
+}
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about, .contact {
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.about h3, .contact h3 {
+    color: #f1c40f;
+}
+
+.contact a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 15px;
+    opacity: 0.8;
+}
